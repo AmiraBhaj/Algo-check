@@ -1,0 +1,21 @@
+ALGORITHM SUM_NO_OVERLAP
+VAR
+tab1,tab2,tab3 : ARRAY_OF INTEGER[];
+Sum,i,j,k:INTEGER:=0;
+EXIST:BOOLEAN;
+BEGIN
+ FOR i FROM 0 TO tab1.length STEP 1  DO
+  FOR j FROM 0 TO tab2.length STEP 1  DO
+       IF (tab1[i] = tab2[j]) THEN
+       EXIST:=TRUE;
+       ELSE_IF (EXIST:=FALSE) THEN
+           tab3[K]:=tab1[i];
+       END_IF
+    END_FOR
+ END_FOR 
+
+    FOR k FROM 0 TO tab3.length STEP 1 DO
+        Sum:=Sum+tab3[k]
+    END_FOR
+    RETURN Sum
+    END

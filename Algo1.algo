@@ -1,0 +1,30 @@
+ALGORITHM VERIF
+VAR
+   MOT:STRING;
+   sum:INTEGER:=0;
+   count:INTEGER:=0;
+   vow:INTEGER:=0;
+   i:INTEGER;
+
+BEGIN
+
+   READ(MOT);
+FOR i FROM 0 TO length(MOT)
+
+    IF (MOT[i] != ' '):  
+        sum = sum + 1;  
+    END_IF
+      Write(sum);
+
+       IF (" ") THEN
+           count=count+i;
+       END_IF
+   Write(count);
+
+   IF (MOT[i]:="a"||"e"||"i"||"o"||"y") THEN
+       vow=vow+1;
+   END_IF
+    Write(vow);
+   END_FOR
+   
+END
